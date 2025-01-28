@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+   
+}
+._Login{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(79, 80, 80);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.input{
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(41, 41, 41, 0.5); 
+    border-radius: 10px;
+}

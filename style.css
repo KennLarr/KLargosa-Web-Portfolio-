@@ -1,0 +1,279 @@
+body.dark-mode {
+    background-color:rgb(104, 104, 104);
+    color:rgb(255, 255, 255);
+  }
+  
+  .navbar.dark-mode {
+    background-color:rgb(104, 104, 104);
+}
+  
+  .dark-mode .bi-moon-fill {
+    color: #f5f5f5;
+  }
+  .bi-moon-fill {
+    color: white;
+  }
+  .bi-sun-fill {
+    color: white;
+  }
+ 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: "Anton SC", sans-serif;
+    font-weight: 90;
+    font-style: normal;
+    z-index: 1; 
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+.buttonHover {
+    transition: 0.5s;
+}
+
+.buttonHover:hover {
+   
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+
+.profile_pic {
+    width: 400px;
+    height: 100%;
+    border-radius: 50%;
+
+
+}
+
+.h1name {
+
+    text-align: end;
+    font-weight: 800;
+    font-size: clamp(4rem, 100vw, 6rem);
+}
+
+.subname {
+
+    text-align: end;
+}
+
+
+.section {
+    min-height: 100vh;
+
+}
+#design{
+    padding-top: 150px; /* Depende sa taas ng navbar */
+    
+}
+/* nav design */
+
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navLogo {
+    height: 50px;
+    width: 90%;
+}
+
+
+.nav-item {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
+    color: rgb(65, 65, 65);
+}
+
+.navbar-brand {
+    font-weight: 100;
+
+
+}
+
+.aboutpic {
+    max-width: 200px;
+    height: auto;
+
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.navbar {
+    background-color: rgb(22, 22, 22);
+
+
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(117, 117, 117);
+
+}
+
+
+
+
+
+.icon {
+    color: black;
+    transition: 0.5s ease;
+}
+
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.con_header {
+    box-shadow: 2px solid black;
+
+}
+
+
+.processCon {
+
+    margin-top: 300px;
+
+}
+
+.progress {
+
+    height: 30px;
+    width: 400px;
+
+}
+
+.progress-PhotoShop,
+.progress-Ai,
+.progress-Pr,
+.progress-Af,
+.progress-html,
+.progress-css,
+.progress-react {
+
+
+    width: 0;
+    /* Default state */
+    transition: width 1s ease-in-out;
+    /* Adjust duration and easing */
+}
+
+.img-gallery {
+    height: auto;
+    width: 200px;
+    transition: 1s ease;
+}
+
+.img-gallery:hover {
+    transform: scale(1.2);
+}
+
+.project_One{
+    width: 500px;
+    height:auto;
+
+}
+
+
+
+@media (max-width: 576px) {
+   
+
+
+
+    .navbar {
+        background-color: rgb(0, 0, 0);
+
+    }
+
+  
+
+
+    .navbar-toggler {
+        color: rgba(145, 145, 145, 0);
+        background-color: #ffffff00;
+        border: var(--bs-border-width) solid #ffffff00;
+    }
+
+    .nav-item {
+
+        text-align: center;
+    }
+
+    .nav-item:hover {
+        transform: scale(1.1);
+        color: rgb(56, 56, 56);
+    }
+
+
+
+
+    .profile_pic {
+        content: url('assest/small.png');
+        height: auto;
+        max-width: 300px;
+
+    }
+
+    .col1 {
+        order: 2;
+
+
+    }
+
+    .col2 {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .subname {
+
+        text-align: center;
+    }
+
+    .h1name {
+
+        text-align: center;
+        font-weight: 800;
+        font-size: 50px;
+
+    }
+
+    .h1name br {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: white;
+
+    }
+
+    .img-gallery {
+        height: auto;
+        width: 100px;
+
+        transition: 1s ease;
+    }
+
+    .img-gallery:hover {
+        transform: scale(1.2);
+    }
+
+}
