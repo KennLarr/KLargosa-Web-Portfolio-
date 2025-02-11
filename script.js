@@ -1,18 +1,24 @@
 function updateImage() {
   const img = document.getElementById('profile-pic');
+  
+  // Check if the img element exists
+  if (!img) {
+    
+    return; // Stop execution if the element doesn't exist
+  }
+
+  // Update the image source based on screen size
   if (window.innerWidth <= 576) {
-    img.src = 'assest/IMG_SM.png'; // Path to the new image for small screens
-
-
+    img.src = 'assets/IMG_SM.png'; // Corrected folder name to 'assets'
   } else {
-    img.src = 'ssest/IMG_20241110_180700_611 copy.png';
-
+    img.src = 'assets/IMG_20241110_180700_611 copy.png';
   }
 }
 
 // Run on load and on resize
 window.addEventListener('load', updateImage);
 window.addEventListener('resize', updateImage);
+
 
 document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
   link.addEventListener('click', function (event) {
@@ -33,6 +39,18 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
       setTimeout(() => collapseInstance.hide(), 300);
     }
   });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  for (let i = 0; i < 50; i++) {
+    let particle = document.createElement("div");
+    particle.classList.add("particle");
+    particle.style.left = `${Math.random() * 100}vw`;
+    particle.style.animationDuration = `${Math.random() * 3 + 2}s`;
+    particle.style.animationDelay = `${Math.random() * 2}s`;
+    document.body.appendChild(particle);
+  }
 });
 
 
